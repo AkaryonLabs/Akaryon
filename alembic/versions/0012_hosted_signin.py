@@ -3,7 +3,7 @@ from alembic import op
 import sqlalchemy as sa
 
 revision = "0012_hosted_signin"
-down_revision = "0011_flexible_embedding_dimensions"
+down_revision = "0011_flex_embed_dims"
 branch_labels = None
 depends_on = None
 

@@ -3,7 +3,7 @@
 from alembic import op
 import sqlalchemy as sa
 
-revision = "0011_flexible_embedding_dimensions"
+revision = "0011_flex_embed_dims"
 down_revision = "0010_conversation_project_scope"
 branch_labels = None
 depends_on = None
