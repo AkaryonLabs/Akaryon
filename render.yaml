@@ -1,0 +1,42 @@
+# Free pilot. Render Free Postgres expires after 30 days.
+# Confirm a durable database plan before using this beyond the pilot.
+services:
+  - type: web
+    name: akaryon-live
+    runtime: python
+    region: ohio
+    plan: free
+    branch: main
+    autoDeployTrigger: off
+    buildCommand: pip install -r requirements-render.txt
+    startCommand: python -m akaryon.hosted_launcher
+    healthCheckPath: /healthz
+    domains:
+      - akaryon.live
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.8
+      - key: AKARYON_PUBLIC_URL
+        value: https://akaryon.live
+      - key: AKARYON_OPENAI_MODEL
+        value: gpt-4o-mini
+      - key: AKARYON_INVITED_EMAIL
+        sync: false
+      - key: AKARYON_INVITED_GITHUB_ID
+        sync: false
+      - key: AKARYON_OPENAI_API_KEY
+        sync: false
+      - key: AKARYON_GITHUB_CLIENT_ID
+        sync: false
+      - key: AKARYON_GITHUB_CLIENT_SECRET
+        sync: false
+      - key: DATABASE_URL
+        fromDatabase:
+          name: akaryon-live-db
+          property: connectionString
+databases:
+  - name: akaryon-live-db
+    databaseName: akaryon
+    region: ohio
+    plan: free
+    ipAllowList: []

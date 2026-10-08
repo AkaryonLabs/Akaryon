@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 720" role="img" aria-labelledby="title desc">
+  <title id="title">Akaryon cosmos</title><desc id="desc">A deep blue planet and a golden spiral galaxy among distant stars.</desc>
+  <defs>
+    <linearGradient id="space" x2="1" y2="1"><stop stop-color="#020813"/><stop offset=".5" stop-color="#07172c"/><stop offset="1" stop-color="#020914"/></linearGradient>
+    <radialGradient id="nebula"><stop stop-color="#154879" stop-opacity=".55"/><stop offset=".46" stop-color="#11294f" stop-opacity=".24"/><stop offset="1" stop-color="#06101f" stop-opacity="0"/></radialGradient>
+    <radialGradient id="planet" cx=".34" cy=".23"><stop stop-color="#335783"/><stop offset=".45" stop-color="#152d4d"/><stop offset=".82" stop-color="#081525"/><stop offset="1" stop-color="#020811"/></radialGradient>
+    <radialGradient id="sun"><stop stop-color="#fffbd7"/><stop offset=".04" stop-color="#ffc76b"/><stop offset=".14" stop-color="#fb8e3b" stop-opacity=".95"/><stop offset=".38" stop-color="#da6a35" stop-opacity=".55"/><stop offset="1" stop-color="#dc7b39" stop-opacity="0"/></radialGradient>
+    <linearGradient id="sweep"><stop stop-color="#ffd88b" stop-opacity="0"/><stop offset=".48" stop-color="#ffbb68" stop-opacity=".8"/><stop offset=".52" stop-color="#fff6d0"/><stop offset=".56" stop-color="#f39b53" stop-opacity=".72"/><stop offset="1" stop-color="#ffca7a" stop-opacity="0"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="14"/></filter>
+    <pattern id="stars" width="190" height="150" patternUnits="userSpaceOnUse"><circle cx="18" cy="22" r="1.3" fill="#e9f4ff" opacity=".85"/><circle cx="99" cy="18" r=".7" fill="#8bcfff"/><circle cx="155" cy="63" r="1" fill="#fff5d6"/><circle cx="52" cy="104" r=".8" fill="#dbeeff"/><circle cx="133" cy="132" r=".65" fill="#fff"/><circle cx="177" cy="115" r=".7" fill="#7cb9ff"/></pattern>
+  </defs>
+  <rect width="1600" height="720" fill="url(#space)"/><ellipse cx="880" cy="265" rx="780" ry="470" fill="url(#nebula)"/><rect width="1600" height="720" fill="url(#stars)" opacity=".85"/>
+  <g opacity=".5" fill="#99c8ff"><circle cx="171" cy="151" r="1.2"/><circle cx="292" cy="77" r=".8"/><circle cx="489" cy="113" r="1.1"/><circle cx="756" cy="80" r=".9"/><circle cx="1284" cy="105" r="1"/><circle cx="1458" cy="235" r="1.1"/><circle cx="1411" cy="530" r=".8"/><circle cx="1124" cy="634" r="1.1"/><circle cx="937" cy="93" r=".6"/></g>
+  <ellipse cx="560" cy="616" rx="575" ry="444" fill="#3286c0" opacity=".2" filter="url(#glow)"/>
+  <circle cx="493" cy="662" r="493" fill="url(#planet)" stroke="#5798ce" stroke-opacity=".62" stroke-width="2"/><path d="M67 473c148-118 332-173 565-165 150 5 275 38 385 91" fill="none" stroke="#9ac8ed" stroke-opacity=".23" stroke-width="3"/>
+  <g opacity=".38" fill="none" stroke="#a2b9d0"><path d="M-24 430c140 26 259 31 369 7 102-23 193-84 308-82 80 1 141 24 229 65"/><path d="M-52 529c171 32 293 28 407-8 81-25 153-67 247-64 83 3 155 44 232 78"/><path d="M57 309c139 18 245 3 342-43 48-23 95-48 159-51"/></g>
+  <g fill="#071321" stroke="#a8bfd3" stroke-opacity=".36"><circle cx="851" cy="265" r="37"/><circle cx="1025" cy="414" r="17"/><circle cx="714" cy="386" r="12"/><circle cx="1183" cy="345" r="22"/><circle cx="920" cy="121" r="9"/></g>
+  <g transform="translate(1290 285)"><circle r="250" fill="url(#sun)"/><circle r="130" fill="url(#sun)" opacity=".55" filter="url(#glow)"/><g fill="none" stroke="url(#sweep)" stroke-linecap="round"><path stroke-width="8" d="M-244 16C-191-163 42-218 155-99c91 97 30 205-54 195-83-10-51-119 20-130 57-9 78 50 43 80"/><path stroke-width="3" opacity=".85" d="M-215-74C-116-202 103-191 184-60c63 101 5 212-93 208-79-3-112-88-64-135 39-39 105-24 111 19"/><path stroke-width="2" opacity=".75" d="M-143 174C-15 237 180 169 203 45"/></g><circle r="8" fill="#fff6d8"/><circle r="22" fill="#ffc877" opacity=".54" filter="url(#glow)"/></g>
+  <rect width="1600" height="720" fill="url(#space)" opacity=".14"/>
+</svg>

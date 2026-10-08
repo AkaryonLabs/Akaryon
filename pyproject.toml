@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "akaryon-core"
+version = "0.1.0"
+description = "Provider-independent AI control runtime"
+requires-python = ">=3.11"
+dependencies = ["fastapi>=0.110", "uvicorn[standard]>=0.27", "pydantic-settings>=2.2", "sqlalchemy>=2.0", "alembic>=1.13", "pypdf>=5.0", "pillow>=10.0"]
+
+[project.optional-dependencies]
+openai = ["openai>=1.30"]
+hosted = ["openai>=1.30", "httpx>=0.27", "psycopg[binary]>=3.1", "pgvector>=0.2"]
+anthropic = ["anthropic>=0.34"]
+postgres = ["psycopg[binary]>=3.1", "pgvector>=0.2"]
+dev = ["pytest>=8", "httpx>=0.27"]
+packaging = ["pyinstaller>=6.10", "openai>=1.30", "anthropic>=0.34", "psycopg[binary]>=3.1", "pgvector>=0.2"]
+
+[project.scripts]
+akaryon = "akaryon.launcher:main"
+
+[tool.setuptools.packages.find]
+include = ["akaryon*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

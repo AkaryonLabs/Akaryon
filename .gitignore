@@ -1,0 +1,12 @@
+.env
+.venv/
+.uv-cache/
+akaryon_core.egg-info/
+.test-tmp/
+.build/
+build/
+dist/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.db

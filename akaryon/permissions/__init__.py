@@ -1,0 +1,1 @@
+"""Centralized tool permission decisions."""
